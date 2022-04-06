@@ -1,0 +1,73 @@
+<title>Sample Project</title>
+<link rel="stylesheet" type="text/css" href="./index.css">
+
+<h1>Project LP</h1>
+
+<div><span id="error"></span></div>
+
+<section>
+  <h2>ICO</h2>
+
+  <form id="ico_set_general">
+    <button type="submit">Set Phase GENERAL</button>
+    <span style='font-style:italic;color:gray'>[as hardhat account #0]</style>
+  </form>
+  <form id="ico_set_open">
+    <button type="submit">Set Phase OPEN</button>
+    <span style='font-style:italic;color:gray'>[as hardhat account #0]</style>
+  </form>
+
+  <form id="ico_spc_buy">
+    Buy SPC
+    <input name="eth" value="0.1" autocomplete="off">
+    <button type="submit">Buy</button>
+  </form>
+
+  <form id="ico_withdraw_to_treasury">
+    <button type="submit">Withdraw ETH to Treasury</button>
+    <span style='font-style:italic;color:gray'>[as hardhat account #1]</style>
+  </form>
+
+  <div>ICO Phase: <span id="icoPhase"></span></div>
+  <div>SPC Left to Buy: <span id="icoSpcAvailable"></span> SPC</div>
+  <div>ICO funds: <span id="icoETH"></span> ETH</div>
+  <div>Treasury SPC: <span id="icoTreasurySPC"></span> SPC</div>
+  <div>Treasury funds: <span id="icoTreasuryETH"></span> ETH</div>
+
+</section>
+
+<section>
+  <h2>Pool</h2>
+
+  <div>Pool Reserves: <span id="lpEthReserve"></span> ETH / <span id="lpSpcReserve"></span> SPC</div>
+  <div>Your ETH: <span id="lpYourEth"></span> ETH</div>
+  <div>Your SPC: <span id="lpYourSpc"></span> SPC</div>
+  <div>Your LP Tokens: <span id="lpYourLP"></span> LP Tokens</div>
+
+  <form id="lp_deposit">
+    Deposit for LP tokens <br>
+    <input name="eth" value="0" autocomplete="off"> ETH<br>
+    <input name="spc" value="0" autocomplete="off"> SPC<br>
+    <button type="submit">Deposit</button>
+  </form>
+
+  <form id="lp_withdraw">
+    Withdraw from pool <br>
+    <button type="submit">Withdraw All</button>
+  </form>
+</section>
+
+<section>
+  <h2>Trade</h2>
+
+  <form id="swap">
+    Trade SPC for ETH <br>
+    <input name="amount_in" value="0" autocomplete="off"> <span id="swap_in_label">ETH</span>
+    <small id="switcher" style="text-decoration: underline; cursor: pointer;">swap</small>
+    <br>
+    <span id="swap_out_label">0 SPC</span><br>
+    <button type="submit">Trade</button>
+  </form>
+</section>
+
+<script type="module" src="./index.js"></script>
