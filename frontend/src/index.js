@@ -8,16 +8,16 @@ import PoolJSON from '../../artifacts/contracts/SpaceCoinPool.sol/SpaceCoinPool.
 const provider = new ethers.providers.Web3Provider(window.ethereum)
 const signer = provider.getSigner()
 
-const icoAddr = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
+const icoAddr = '0x650d8d6d7a60eBd821C749C912d3dEFF195238f0'
 const ico = new ethers.Contract(icoAddr, IcoJSON.abi, provider);
 
-const routerAddr = '0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0'
+const routerAddr = '0x2C2775990C611F8C8e756D13Daed1836A088Ee9c'
 const router = new ethers.Contract(routerAddr, RouterJSON.abi, provider);
 
-const poolAddr = '0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512';
+const poolAddr = '0xa4bab3c7182F8fe8DA6d9362891679dC75646a99';
 const pool = new ethers.Contract(poolAddr, PoolJSON.abi, provider);
 
-const treasury = '0x70997970C51812dc3A010C7d01b50e0d17dc79C8';
+const treasury = '0x89661045a8E28dc9900138843Fd8e0Ed031c1D18';
 
 let token;
 let icoPhase;

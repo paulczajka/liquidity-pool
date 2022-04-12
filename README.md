@@ -79,3 +79,23 @@ Accounts used for local testing:
 - Hardhat Account #2: Whitelisted Seed Investor
 - Hardhat Account #3: Whitelisted Seed Investor
 
+## Deployments
+
+### Rinkeby
+
+Deployment command and output:
+
+```bash
+npx hardhat run --network rinkeby scripts/deploy.js
+
+> Deploying contracts with the account: 0xd67314eCc432c3886c85d3BD0eE4DfC68463E697
+> Deployer address (whitelisted): 0xd67314eCc432c3886c85d3BD0eE4DfC68463E697
+> Treasury address (whitelisted): 0x89661045a8E28dc9900138843Fd8e0Ed031c1D18
+> Seed Investor address: 0x2565D8784b9F5d594C95394A1112ee039C97e3c4
+> Seed Investor address: 0x5f82348C805B0e11f7BfB57f4505C7F7ebFC4626
+> Ico address: 0x650d8d6d7a60eBd821C749C912d3dEFF195238f0
+> Token address: 0xc3C02fc096B701F6a5b03DE1583834D9D49F2B28
+> Pool address: 0xa4bab3c7182F8fe8DA6d9362891679dC75646a99
+> Router address: 0x2C2775990C611F8C8e756D13Daed1836A088Ee9c
+```
+
