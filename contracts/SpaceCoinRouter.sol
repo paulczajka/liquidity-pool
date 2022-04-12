@@ -37,7 +37,7 @@ contract SpaceCoinRouter {
 
     /// Remove liquidity from the Pool
     /// @param _liquidity Liquidity token amount to remove
-    /// @param _minAmountSPC Revert if SPC returned is less than this value. Should accoun for Pool fees and SPC transfer tax.
+    /// @param _minAmountSPC Revert if SPC returned is less than this value. Should account for Pool fees and SPC transfer tax.
     /// @param _minAmountETH Revert if ETH returned is less than this value.
     /// @param _to Address to return ETH and SPC to
     function removeLiquidity(

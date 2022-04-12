@@ -12,9 +12,9 @@ contract SpaceCoinToken is ERC20 {
     // When taxing is enabled, treasury takes 2%
     uint8 private constant TAX_PERCENT = 2;
     // Equivalent to 500,000 SPC
-    uint80 private constant TOTAL_SUPPLY = 500000000000000000000000;
+    uint80 private constant TOTAL_SUPPLY = 500000e18;
     // 150,000 SPC is reserved for ICO. Remainder goes to treasury
-    uint80 private constant ICO_SUPPLY = 150000000000000000000000;
+    uint80 private constant ICO_SUPPLY = 150000e18;
 
     // Deployer/owner.  This is the SpaceCoinIco contract
     address private immutable owner;

@@ -95,8 +95,6 @@ contract SpaceCoinIco {
     address private immutable treasury;
     // Track contributors and their contributions
     mapping(address => Contributor) private contributors;
-    // Allow iteration on the above contributors mapping, used for token distribution
-    address[] private contributorKeys;
 
     /// Notifies when contract paused state changes
     /// @param isPaused Whether purchasing is present paused
@@ -126,7 +124,6 @@ contract SpaceCoinIco {
         token = new SpaceCoinToken(_treasury);
 
         // Set initial SEED phase state
-        phase = Phase.SEED;
         phaseLimit = SEED_TOTAL;
         individualLimit = SEED_INDIVIDUAL;
         emit PhaseStarted("Seed", SEED_TOTAL, SEED_INDIVIDUAL);
@@ -149,7 +146,6 @@ contract SpaceCoinIco {
             contributions: 0,
             claimedSPC: 0
         });
-        contributorKeys.push(_contributor);
     }
 
     // 1 ETH converts to 5 SPC

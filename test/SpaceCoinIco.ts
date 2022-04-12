@@ -48,7 +48,7 @@ describe("SpaceCoinIco", function () {
     token = <SpaceCoinToken>new ethers.Contract(await ico.token(), tokenArtifact.abi, ethers.provider);
   });
 
-  describe("::Unit::", async function () {
+  describe("::UNIT::", async function () {
     describe("Initial state", function () {
       it("is in Phase Seed", async function() {
         expect(await ico.phase()).to.equal(Phase.SEED);

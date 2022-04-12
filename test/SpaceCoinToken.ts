@@ -20,7 +20,7 @@ describe("SpaceCoinToken", function () {
   let bob: SignerWithAddress;
   let addrs: SignerWithAddress[];
 
-  describe("::Unit::", async function () {
+  describe("::UNIT::", async function () {
     beforeEach(async function () {
       [owner, treasury, alice, bob, ...addrs] = await ethers.getSigners();
 
